@@ -1,0 +1,14 @@
+先にPJの大前提を読んで
+G:\devwork\obsidian-set\AGENTS.md
+
+日本語でオペレーションします。下記を読んで。
+https://github.com/affaan-m/everything-claude-code
+
+今のルートディレクトリは下記です
+G:\devwork\obsidian-set
+
+ECCは下記にクローンしてあるので、ここからこのObsidianPJに必要なファイルだけObsidian-set配下にコピーしたり
+その他必要な作業を整理して教えて
+G:\devwork\clone-dir\everything-claude-code
+
+長くなるようなら、docs/配下に手順をファイル出力して

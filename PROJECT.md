@@ -1,0 +1,45 @@
+# obsidian-set Project Context
+
+## 目的
+
+この PJ は Obsidian vault / knowledge base 的に扱う。
+主な用途は、調査、知識整理、文章化、運用メモの蓄積。
+
+## 優先度モデル
+
+1. `AGENTS.md`
+   - 全 tool 共通の最上位ルール。
+2. `PROJECT.md`
+   - この PJ の目的、情報配置、運用方針。
+3. `docs/guide/`
+   - 恒久的な運用ガイド、判断基準、ルール補足。
+4. `docs/spec/`
+   - 仕様、要件、設計前提。
+5. `docs/imp/`
+   - 実装メモ、作業記録、進捗。
+6. `.agents/skills/`
+   - ECC 由来の作業別 workflow。該当作業の時だけ読む。
+7. `docs/memo.txt`
+   - 初回依頼などの生メモ。恒久ルールの正本にはしない。
+
+## ECC から取り込んだ skill
+
+`G:\devwork\obsidian-set\.agents\skills` に実体をコピー済み。
+外部の ECC clone を実運用で参照する構成ではない。
+
+- `knowledge-ops`: Obsidian / KB / local docs の整理、保存、検索、重複排除。
+- `research-ops`: 調査タスクの入口。証拠、推論、提案を分ける。
+- `deep-research`: 複数ソースの深い調査。
+- `exa-search`: Web / code / company などの探索補助。
+- `market-research`: 比較、評価、推薦。
+- `article-writing`: メモや調査結果から長文を書く。
+- `brand-voice`: 文体や声の抽出。
+- `content-engine`: 複数媒体向けの文章展開。
+
+## 運用ルール
+
+- ルールを増やす時は `AGENTS.md` に詰め込まず、原則 `PROJECT.md` か `docs/guide/` に分ける。
+- 作業の一次記録は `docs/imp/` に置く。
+- 仕様として後から参照する情報は `docs/spec/` に置く。
+- 一時メモを恒久ルールに昇格する時は、`docs/memo.txt` から該当箇所を整理して移す。
+- ECC skill を追加する時は、必要な skill だけ `.agents/skills/` にコピーし、`docs/ecc-obsidian-setup.md` とこの `PROJECT.md` を更新する。
