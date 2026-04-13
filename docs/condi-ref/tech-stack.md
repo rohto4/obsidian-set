@@ -4,8 +4,9 @@
 
 ## 位置づけ
 
-このファイルは `obsidian-set` の技術参照情報の正本。
-恒久ルールは `docs/guide/`、仕様と技術選定は `docs/spec/`、作業ログは `docs/imp/` に分ける。
+このファイルは `obsidian-set` の条件付き技術参照情報。
+採用済み仕様の正本ではなく、候補、調査元、導入前提を集める場所。
+恒久ルールは `docs/guide/`、確定仕様は `docs/spec/`、条件付き参考資料は `docs/condi-ref/`、作業ログは `docs/imp/` に分ける。
 
 ## Core
 
@@ -30,7 +31,7 @@ Obsidian については公式 Help を最初の参照元にする。
 - Obsidian CLI: official Help から参照。外部コマンドから Obsidian を操作する必要が出た時に検討する。
 
 この PJ では Obsidian の vault を直接 Markdown ファイル群として扱う。
-Obsidian アプリ固有の設定や community plugin 設定を追加する場合は、先に `docs/spec/` に目的とリスクを書く。
+Obsidian アプリ固有の設定や community plugin 設定を追加する場合は、先に `docs/condi-ref/` に目的とリスクを書き、採用確定後に `docs/spec/` へ移す。
 
 ## Git / GitHub
 
@@ -59,7 +60,7 @@ git diff --stat
 ## MCP
 
 MCP は Obsidian と AI agent / tool を接続する候補として扱う。
-現時点では未導入。導入前に `docs/spec/` で使用目的、権限、秘密情報、読み書き範囲を決める。
+現時点では未導入。導入前に `docs/condi-ref/` で使用目的、権限、秘密情報、読み書き範囲を決める。
 
 公式参照:
 

@@ -1,4 +1,4 @@
-# SQL Queryable Vault
+﻿# SQL Queryable Vault
 
 作成日: 2026-04-14
 
@@ -105,7 +105,7 @@ DuckDBにはfull-text search extensionもある。
 このPJでは次の順で検証する。
 
 1. まず frontmatter schema を安定させる。
-2. `docs/spec/sql-queryable-vault.md` でDB schema案を書く。
+2. `docs/condi-ref/sql-queryable-vault.md` でDB schema案を書く。
 3. SQLite FTS5 indexerを検討する。
 4. 必要ならDuckDB版も比較する。
 5. Obsidian UI内で必要になったらDataviewを検討する。

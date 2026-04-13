@@ -1,4 +1,4 @@
-# Agents Tasks Status
+﻿# Agents Tasks Status
 
 最大50行。古い行から削除する。
 
@@ -11,21 +11,22 @@
 2026-04-12 | Codex | done | `docs/guide/vault-operation.md` を作成。
 2026-04-12 | Codex | done | `docs/spec/note-frontmatter.md` を作成。
 2026-04-12 | Codex | done | `docs/guide/query-protocol.md` を作成。
-2026-04-12 | Codex | done | `docs/spec/sync-strategy.md` を作成。
-2026-04-12 | Codex | done | `docs/spec/obsidian-mcp-evaluation.md` を作成。
+2026-04-12 | Codex | done | `docs/condi-ref/sync-strategy.md` を作成。
+2026-04-12 | Codex | done | `docs/condi-ref/obsidian-mcp-evaluation.md` を作成。
 2026-04-14 | Codex | done | `docs/imp/imp-wait.md` のユーザ回答を読み込み、回答済みと新規判断待ちに整理。
-2026-04-14 | Codex | done | `docs/spec/vscode-extensions.md` を作成。
-2026-04-14 | Codex | done | `docs/spec/web-clipper.md` を作成。
-2026-04-14 | Codex | done | `docs/spec/knowledge-category-options.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/vscode-extensions.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/web-clipper.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/knowledge-category-options.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/ai-session-summary.md` を作成。
-2026-04-14 | Codex | done | `docs/spec/codex-obsidian-mcp-roadmap.md` を作成。
-2026-04-14 | Codex | done | `docs/spec/markdownlint.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/codex-obsidian-mcp-roadmap.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/markdownlint.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/source-backed-notes.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/dev-knowledge-taxonomy.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/ai-knowledge-taxonomy.md` を作成。
-2026-04-14 | Codex | done | `docs/spec/obsidian-local-rest-api.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/obsidian-local-rest-api.md` を作成。
 2026-04-14 | Codex | done | 個人ブログ・実践記事を追加調査し、公式情報偏重だった点を補正。
-2026-04-14 | Codex | done | `docs/spec/practical-obsidian-workflows.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/practical-obsidian-workflows.md` を作成。
 2026-04-14 | Codex | done | `docs/imp/imp-plan.md` に応用的なObsidian運用パターンを追記。
 2026-04-14 | Codex | done | SQLで再現可能にvaultを検索する方式を調査。
-2026-04-14 | Codex | done | `docs/spec/sql-queryable-vault.md` を作成。
+2026-04-14 | Codex | done | `docs/condi-ref/sql-queryable-vault.md` を作成。
+2026-04-14 | Codex | done | 条件付き参考資料を `docs/spec/` から `docs/condi-ref/` へ分離。

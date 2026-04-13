@@ -1,4 +1,4 @@
-# Obsidian Local REST API Evaluation
+﻿# Obsidian Local REST API Evaluation
 
 作成日: 2026-04-14
 
@@ -44,7 +44,7 @@ Obsidian app 内で local REST API を立て、API key で保護された endpoi
 
 ## Codex MCP との関係
 
-`docs/spec/codex-obsidian-mcp-roadmap.md` の前段として使う。
+`docs/condi-ref/codex-obsidian-mcp-roadmap.md` の前段として使う。
 MCP server を入れる前に、Local REST API plugin 単体で何ができるか確認する。
 
 ## References

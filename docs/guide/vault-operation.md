@@ -22,7 +22,8 @@
 | `AGENTS.md` | 全 agent / tool 共通の最上位ルール |
 | `PROJECT.md` | PJ 固有の目的、優先度、情報配置 |
 | `docs/guide/` | 恒久的な運用ガイド、判断基準 |
-| `docs/spec/` | 仕様、技術選定、採用判断 |
+| `docs/spec/` | 実装対象として確定した仕様、要件、設計前提 |
+| `docs/condi-ref/` | 条件付き参考資料、実現可能性確認、候補比較 |
 | `docs/imp/` | 作業計画、進捗、判断待ち、作業ログ |
 | `.agents/skills/` | ECC 由来の作業別 workflow |
 
@@ -57,8 +58,9 @@
 1. 調査する。
 2. `docs/imp/imp-plan.md` に作業案を追加する。
 3. 判断が必要なものは `docs/imp/imp-wait.md` に移す。
-4. 判断不要なものは `docs/guide/` または `docs/spec/` にドラフトを書く。
-5. Git commit 前に `git status --short --branch` と `git diff --stat` を確認する。
+4. 判断不要な運用ルールは `docs/guide/` に、条件付き参考資料は `docs/condi-ref/` にドラフトを書く。
+5. 実装対象として確定した仕様だけ `docs/spec/` に移す。
+6. Git commit 前に `git status --short --branch` と `git diff --stat` を確認する。
 
 ## Query Workflow
 
@@ -66,6 +68,6 @@
 
 1. `PROJECT.md` を読む。
 2. 関連する `docs/guide/` と `docs/spec/` を読む。
-3. `docs/imp/imp-wait.md` を見て未決を確認する。
-4. 回答を `sourced fact`, `inference`, `recommendation`, `open questions` に分ける。
-
+3. 関連する `docs/condi-ref/` を読む。
+4. `docs/imp/imp-wait.md` を見て未決を確認する。
+5. 回答を `sourced fact`, `inference`, `recommendation`, `open questions` に分ける。

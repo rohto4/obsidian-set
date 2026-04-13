@@ -22,7 +22,8 @@
 ## 恒久情報の置き場所
 
 - ECC や `AGENTS.md` 以外の恒久ルール: `docs/guide/`
-- 仕様: `docs/spec/`
+- 実装対象として確定した仕様: `docs/spec/`
+- 条件付き参考資料、実現可能性確認、候補比較: `docs/condi-ref/`
 - 実装内容: `docs/imp/imp-*`
 - 進捗状況: `docs/imp/*-status.md`
 

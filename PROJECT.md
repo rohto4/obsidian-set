@@ -14,12 +14,14 @@
 3. `docs/guide/`
    - 恒久的な運用ガイド、判断基準、ルール補足。
 4. `docs/spec/`
-   - 仕様、要件、設計前提。
-5. `docs/imp/`
+   - 実装対象として確定した仕様、要件、設計前提。
+5. `docs/condi-ref/`
+   - 条件付き参考資料、実現可能性確認、候補比較、未採用の選択肢。
+6. `docs/imp/`
    - 実装メモ、作業記録、進捗。
-6. `.agents/skills/`
+7. `.agents/skills/`
    - ECC 由来の作業別 workflow。該当作業の時だけ読む。
-7. `docs/memo.txt`
+8. `docs/memo.txt`
    - 初回依頼などの生メモ。恒久ルールの正本にはしない。
 
 ## ECC から取り込んだ skill
@@ -40,6 +42,7 @@
 
 - ルールを増やす時は `AGENTS.md` に詰め込まず、原則 `PROJECT.md` か `docs/guide/` に分ける。
 - 作業の一次記録は `docs/imp/` に置く。
-- 仕様として後から参照する情報は `docs/spec/` に置く。
+- 実装対象として確定した仕様は `docs/spec/` に置く。
+- まだ採用未確定の調査、候補比較、実現可能性確認は `docs/condi-ref/` に置く。
 - 一時メモを恒久ルールに昇格する時は、`docs/memo.txt` から該当箇所を整理して移す。
 - ECC skill を追加する時は、必要な skill だけ `.agents/skills/` にコピーし、`docs/ecc-obsidian-setup.md` とこの `PROJECT.md` を更新する。
