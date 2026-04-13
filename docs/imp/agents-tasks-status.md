@@ -13,3 +13,14 @@
 2026-04-12 | Codex | done | `docs/guide/query-protocol.md` を作成。
 2026-04-12 | Codex | done | `docs/spec/sync-strategy.md` を作成。
 2026-04-12 | Codex | done | `docs/spec/obsidian-mcp-evaluation.md` を作成。
+2026-04-14 | Codex | done | `docs/imp/imp-wait.md` のユーザ回答を読み込み、回答済みと新規判断待ちに整理。
+2026-04-14 | Codex | done | `docs/spec/vscode-extensions.md` を作成。
+2026-04-14 | Codex | done | `docs/spec/web-clipper.md` を作成。
+2026-04-14 | Codex | done | `docs/spec/knowledge-category-options.md` を作成。
+2026-04-14 | Codex | done | `docs/guide/ai-session-summary.md` を作成。
+2026-04-14 | Codex | done | `docs/spec/codex-obsidian-mcp-roadmap.md` を作成。
+2026-04-14 | Codex | done | `docs/spec/markdownlint.md` を作成。
+2026-04-14 | Codex | done | `docs/guide/source-backed-notes.md` を作成。
+2026-04-14 | Codex | done | `docs/guide/dev-knowledge-taxonomy.md` を作成。
+2026-04-14 | Codex | done | `docs/guide/ai-knowledge-taxonomy.md` を作成。
+2026-04-14 | Codex | done | `docs/spec/obsidian-local-rest-api.md` を作成。
