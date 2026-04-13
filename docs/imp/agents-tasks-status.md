@@ -27,3 +27,5 @@
 2026-04-14 | Codex | done | 個人ブログ・実践記事を追加調査し、公式情報偏重だった点を補正。
 2026-04-14 | Codex | done | `docs/spec/practical-obsidian-workflows.md` を作成。
 2026-04-14 | Codex | done | `docs/imp/imp-plan.md` に応用的なObsidian運用パターンを追記。
+2026-04-14 | Codex | done | SQLで再現可能にvaultを検索する方式を調査。
+2026-04-14 | Codex | done | `docs/spec/sql-queryable-vault.md` を作成。
