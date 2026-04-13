@@ -24,3 +24,6 @@
 2026-04-14 | Codex | done | `docs/guide/dev-knowledge-taxonomy.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/ai-knowledge-taxonomy.md` を作成。
 2026-04-14 | Codex | done | `docs/spec/obsidian-local-rest-api.md` を作成。
+2026-04-14 | Codex | done | 個人ブログ・実践記事を追加調査し、公式情報偏重だった点を補正。
+2026-04-14 | Codex | done | `docs/spec/practical-obsidian-workflows.md` を作成。
+2026-04-14 | Codex | done | `docs/imp/imp-plan.md` に応用的なObsidian運用パターンを追記。
