@@ -7,6 +7,12 @@
 公式docsだけでは分からない、個人・実運用ブログ由来のObsidian運用パターンを整理する。
 公式情報は機能確認の正本、個人ブログは運用案の材料として扱う。
 
+## 注意
+
+このファイルは公式枠からAIが膨らませた案を含む。
+今後、ユーザ自身の実運用や実際に読んだ個人ブログ・事例から継続的に更新する。
+採用済みルールではなく、試す候補の置き場として扱う。
+
 ## 追加調査した応用パターン
 
 ### 1. Daily notes as intake layer
@@ -113,7 +119,7 @@ VS CodeでMarkdownを編集し、Obsidianでリンク、グラフ、閲覧、モ
 
 このPJへの適用:
 
-- 現在の方針と一致。`docs/condi-ref/vscode-extensions.md` で Markdown All in One と markdownlint を初期候補にしている。
+- 現在の方針と一致。`docs/Z_trush/vscode-extensions.md` で Markdown All in One と markdownlint を初期候補にしている。
 
 ## このPJへの追加候補タスク
 
@@ -129,4 +135,3 @@ VS CodeでMarkdownを編集し、Obsidianでリンク、グラフ、閲覧、モ
 - Daily notes workflow: https://aiproductivity.ai/guides/obsidian-daily-notes-workflow/
 - Zettelkasten in Obsidian with AI maintenance: https://desktopcommander.app/blog/zettelkasten-obsidian/
 - VS Code as Obsidian-like notes editor: https://www.xda-developers.com/tried-using-vs-code-obsidian-notes/
-

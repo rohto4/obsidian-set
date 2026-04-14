@@ -6,6 +6,17 @@
 
 Obsidian / Markdown vault を通して LLM に「特定カテゴリを今どう把握しているか」を問い合わせるための回答形式を定義する。
 
+## 使う場面
+
+- 「MCPについて今どう把握しているか」のように、カテゴリ単位でLLMに聞く時。
+- 回答に根拠、PJ方針、推論、判断待ち、次アクションを分けたい時。
+- `docs/guide/`、`docs/spec/`、`docs/condi-ref/`、`docs/imp/` のどこを読ませるべきか迷う時。
+
+## 重複管理を避ける方針
+
+このファイルは問い合わせ時の出力形式だけを扱う。
+source noteの保存形式は `docs/guide/source-backed-notes.md`、全体運用は `docs/guide/vault-operation.md` を正本にする。
+
 ## 基本質問テンプレート
 
 ```text

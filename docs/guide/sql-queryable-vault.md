@@ -17,6 +17,29 @@ Obsidianで保存したものに対して、SQLで内容を引っ張ってくる
 
 このPJで再現性を重視するなら、初期推奨は 2 の外部index方式。
 
+## 何が実現できるか
+
+- 同じSQLを実行すれば同じ条件の検索結果を再現できる。
+- frontmatter、title、path、tags、source、updatedなどを組み合わせて検索できる。
+- `review期限切れ`、`AI関連のactive note`、`MCPに関するsource note` などを一覧化できる。
+- AI agentが曖昧検索だけでなく、明示的な条件検索を使える。
+- Obsidian pluginに依存せず、Git管理されたスクリプトとDB schemaで再生成できる。
+
+## 運用想定
+
+1. Markdownファイルを正本にする。
+2. index DBは派生物として扱い、必要なら再生成する。
+3. 最初はfrontmatterとpath/titleの構造化検索を優先する。
+4. 本文全文検索は日本語tokenizeの検証後に入れる。
+5. SQL例は `docs/guide/sql-queryable-vault.md` に蓄積する。
+
+## 導入メリット
+
+- LLMへの問い合わせ結果を「どのSQLで引いたか」まで残せる。
+- 検索結果がObsidian UIの状態に左右されにくい。
+- DataviewなどObsidian pluginと比較しながら段階導入できる。
+- 将来、MCPからSQL検索toolを呼ぶ構成へ拡張しやすい。
+
 ## Option A: Dataview
 
 Dataview はObsidian vault内のMarkdown metadataやinline fieldsを問い合わせる定番community plugin。
@@ -105,7 +128,7 @@ DuckDBにはfull-text search extensionもある。
 このPJでは次の順で検証する。
 
 1. まず frontmatter schema を安定させる。
-2. `docs/condi-ref/sql-queryable-vault.md` でDB schema案を書く。
+2. `docs/guide/sql-queryable-vault.md` でDB schema案を書く。
 3. SQLite FTS5 indexerを検討する。
 4. 必要ならDuckDB版も比較する。
 5. Obsidian UI内で必要になったらDataviewを検討する。
@@ -169,4 +192,3 @@ WHERE notes_fts MATCH 'MCP';
 - Query All The Things plugin overview: https://www.obsidianstats.com/plugins/qatt
 - DuckDB full text search: https://duckdb.org/docs/stable/core_extensions/full_text_search.html
 - SQLite FTS5: https://www.sqlite.org/fts5.html
-

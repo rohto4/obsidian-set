@@ -18,6 +18,28 @@ Obsidian Sync はスマホ利用や複数端末利用が現実になってから
 - GitHub repo なら変更履歴、PR、AI agent 作業と相性がよい。
 - Obsidian Sync と他 cloud storage の併用は conflict リスクがあるため、同期設計を決めてから使うべき。
 
+## 何が実現できるか
+
+- AIとユーザが同じGit管理下のMarkdownを見て作業できる。
+- 変更履歴をcommit単位で追える。
+- VS Code / Codex / Claude Code / Gemini CLI の作業結果を同じ場所に保存できる。
+- Obsidian Syncを導入する前でも、PC上の知識ベースとして運用を始められる。
+
+## 運用想定
+
+1. PCでは `obsidian-set` repo を正本にする。
+2. CodexなどAI agentはこのrepo内のMarkdownを編集する。
+3. Obsidianは同じフォルダをvaultとして開き、閲覧・リンク・検索UIとして使う。
+4. スマホ編集が必要になったら、Obsidian Syncの導入を再検討する。
+5. Sync導入後もGitHubは履歴・AI作業・バックアップの役割を持つ。
+
+## 導入メリット
+
+- 最初から課金や複数端末同期に依存しない。
+- AI作業と人間の作業をGit差分でレビューできる。
+- Obsidian特有の設定にロックインしにくい。
+- 後からSyncへ移行しやすい。
+
 ## Options
 
 ### Option A: GitHub repo を正本にする
@@ -48,7 +70,7 @@ Obsidian Sync はスマホ利用や複数端末利用が現実になってから
 - Git commit 前に `git status --short --branch` を確認する。
 - conflict file が出たら自動解決しない。
 
-## Decision Needed
+## 保留事項
 
 - スマホで実際に編集するか、閲覧だけか。
 - Obsidian Sync に課金するか。
@@ -59,4 +81,3 @@ Obsidian Sync はスマホ利用や複数端末利用が現実になってから
 
 - https://help.obsidian.md/sync
 - https://git-scm.com/docs
-
