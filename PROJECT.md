@@ -21,7 +21,9 @@
    - 実装メモ、作業記録、進捗。
 7. `.agents/skills/`
    - ECC 由来の作業別 workflow。該当作業の時だけ読む。
-8. `docs/memo.txt`
+8. `commands/`
+   - ECC / ecc-expand 由来の試用 command。該当 command を使う時だけ読む。
+9. `docs/memo.md`
    - 初回依頼などの生メモ。恒久ルールの正本にはしない。
 
 ## ECC から取り込んだ skill
@@ -37,6 +39,17 @@
 - `article-writing`: メモや調査結果から長文を書く。
 - `brand-voice`: 文体や声の抽出。
 - `content-engine`: 複数媒体向けの文章展開。
+- `tdd-workflow`: 実装タスクをテスト先行で進める workflow。試用導入。
+- `verification-loop`: 実装後の検証ループ。試用導入。
+
+## 試用導入した command
+
+`commands/` に ECC / ecc-expand 由来の command を必要分だけ置く。
+
+- `expand-answer`: 短い一次回答を必要時だけ詳しく展開する。
+- `prp-plan`: 実装候補を詳細な計画ファイルに落とす。
+- `prp-implement`: 計画ファイルを段階的に実行する。
+- `prp-prd`: 大きめの要望を PRD / phase に分解する。
 
 ## 運用ルール
 
@@ -46,3 +59,4 @@
 - まだ採用未確定の調査、候補比較、実現可能性確認は `docs/condi-ref/` に置く。
 - 一時メモを恒久ルールに昇格する時は、`docs/memo.txt` から該当箇所を整理して移す。
 - ECC skill を追加する時は、必要な skill だけ `.agents/skills/` にコピーし、`docs/ecc-obsidian-setup.md` とこの `PROJECT.md` を更新する。
+- command を追加する時は、必要な command だけ `commands/` にコピーし、`docs/ecc-obsidian-setup.md` とこの `PROJECT.md` を更新する。

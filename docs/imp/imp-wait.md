@@ -13,7 +13,7 @@
 
 反映先:
 - 実行進捗と判断を分離して `docs/imp/imp-plan.md` に同期
-- 要らない項目は `docs/Z_trush/` へ移動済み
+- 要らない項目は `docs/Z_trash/` へ移動済み
 - 要検討項目は `docs/condi-ref/` に残して比較・検証を継続
 
 ## 回答済み
@@ -27,7 +27,7 @@
    - 元の候補: Markdown All in One、markdownlint、Foam、MLink。
    - 回答: おすすめで。
    - 追加判断: VS Code extension 候補比較は不要。installして試して消す運用で十分。
-   - 反映: `docs/Z_trush/vscode-extensions.md` へ移動。markdownlint単体は `docs/condi-ref/markdownlint.md` に要検討として残す。
+   - 反映: `docs/Z_trash/tools/vscode-extensions.md` へ移動。markdownlint単体は `docs/condi-ref/markdownlint.md` に要検討として残す。
 
 3. Obsidian Web Clipper を使うか。
    - 元の論点: 使う場合、保存先、template、source URL、引用量ルールを決める。
@@ -103,7 +103,7 @@
 3. `docs/guide/dev-knowledge-taxonomy.md` のドラフト作成。
 4. `docs/guide/ai-knowledge-taxonomy.md` のドラフト作成。
 5. `docs/condi-ref/obsidian-local-rest-api.md` のドラフト作成。
-6. 要らない分類のVS Code extension候補ファイルを `docs/Z_trush/vscode-extensions.md` へ移動。
+6. 要らない分類のVS Code extension候補ファイルを `docs/Z_trash/tools/vscode-extensions.md` へ移動。
 7. やりたい分類の `sync-strategy`, `web-clipper`, `knowledge-interface-catalog`, `sql-queryable-vault` を `docs/guide/` へ昇格。
 8. 要検討分類の `markdownlint`, `obsidian-local-rest-api`, `practical-obsidian-workflows` は `docs/condi-ref/` に残して補足。
 

@@ -14,7 +14,7 @@
 2026-04-12 | Codex | done | `docs/guide/sync-strategy.md` を作成。
 2026-04-12 | Codex | done | `docs/guide/knowledge-interface-catalog.md` を作成。
 2026-04-14 | Codex | done | `docs/imp/imp-wait.md` のユーザ回答を読み込み、回答済みと新規判断待ちに整理。
-2026-04-14 | Codex | done | `docs/Z_trush/vscode-extensions.md` を作成。
+2026-04-14 | Codex | done | `docs/Z_trash/tools/vscode-extensions.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/web-clipper.md` を作成。
 2026-04-14 | Codex | done | `docs/condi-ref/knowledge-category-options.md` を作成。
 2026-04-14 | Codex | done | `docs/guide/ai-session-summary.md` を作成。
@@ -31,9 +31,12 @@
 2026-04-14 | Codex | done | `docs/guide/sql-queryable-vault.md` を作成。
 2026-04-14 | Codex | done | 条件付き参考資料を `docs/spec/` から `docs/condi-ref/` へ分離。
 2026-04-14 | Codex | done | `docs/memo.txt` の三分類を読み取り、良さそう・要検討・要らないの反映方針を整理。
-2026-04-14 | Codex | done | 要らない分類のVS Code extension候補ファイルを `docs/Z_trush/` へ移動。
+2026-04-14 | Codex | done | 要らない分類のVS Code extension候補ファイルを `docs/Z_trash/` へ移動。
 2026-04-14 | Codex | done | やりたい分類の `sync-strategy`, `web-clipper`, `knowledge-interface-catalog`, `sql-queryable-vault` を `docs/guide/` へ昇格。
 2026-04-14 | Codex | done | `docs/imp/imp-plan.md` に実現できること、運用想定、導入メリットを追記。
 2026-04-14 | Codex | done | 要検討分類は `docs/condi-ref/` に残し、メリット・懸念・重複管理観点を補足。
 2026-04-14 | Codex | done | `docs/condi-ref/foam-evaluation.md`, `index-policy.md`, `github-vault-boundary.md` を要検討メモとして追加。
 2026-04-14 | Codex | done | `docs/memo.txt` 三分類を `imp-plan` の判断欄と `imp-wait` へ取り込み、01-22の採用意向を同期。
+2026-04-16 | Codex | done | `docs/guide/inbox-policy.md` を作成し、inbox運用の昇格・破棄ルールを整理。
+2026-04-17 | Codex | done | ECC から `tdd-workflow` / `verification-loop` skill を `.agents/skills/` に追加。
+2026-04-17 | Codex | done | `commands/` を作成し、`expand-answer` / `prp-plan` / `prp-implement` / `prp-prd` を試用導入。

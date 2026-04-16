@@ -8,6 +8,7 @@
 4. この PJ は ECC 導入前提で扱う。
 5. ただし、この `AGENTS.md` と `PROJECT.md` は ECC 由来の一般ルールより優先する。
 6. 通常の一次回答は短くする。詳しい説明や比較が必要な時、またはユーザが追加を求めた時だけ長めに回答する。
+7. `commands/` は ECC 由来または `ecc-expand` 由来の試用 command 置き場として扱う。
 
 ## 読み込み順
 
@@ -19,6 +20,8 @@
    - ECC をこの PJ にどう取り込んだかの運用メモ。
 4. 必要な `.agents/skills/*/SKILL.md`
    - 作業内容に応じて読む。常時すべてを読まない。
+5. 必要な `commands/*.md`
+   - command を使う時だけ読む。常時すべてを読まない。
 
 ## 恒久情報の置き場所
 
@@ -31,5 +34,6 @@
 ## ECC の扱い
 
 - ECC は `.agents/skills/` にコピー済みの skill を優先して使う。
-- ECC repo 全体、`commands/`、`hooks/`、`.codex/config.toml` はこの PJ には未導入。
+- ECC repo 全体、`hooks/`、`.codex/config.toml` はこの PJ には未導入。
+- `commands/` は `ecc-expand` 経由で必要なものだけ試用導入する。
 - Claude / Gemini / Codex などツール別ファイルは、共通ルールを複製せず、このファイルと `PROJECT.md` へ誘導する。

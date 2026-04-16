@@ -119,7 +119,7 @@ VS CodeでMarkdownを編集し、Obsidianでリンク、グラフ、閲覧、モ
 
 このPJへの適用:
 
-- 現在の方針と一致。`docs/Z_trush/vscode-extensions.md` で Markdown All in One と markdownlint を初期候補にしている。
+- 現在の方針と一致。`docs/Z_trash/tools/vscode-extensions.md` で Markdown All in One と markdownlint を初期候補にしている。
 
 ## このPJへの追加候補タスク
 
