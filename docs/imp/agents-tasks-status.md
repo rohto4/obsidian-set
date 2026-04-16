@@ -40,3 +40,4 @@
 2026-04-16 | Codex | done | `docs/guide/inbox-policy.md` を作成し、inbox運用の昇格・破棄ルールを整理。
 2026-04-17 | Codex | done | ECC から `tdd-workflow` / `verification-loop` skill を `.agents/skills/` に追加。
 2026-04-17 | Codex | done | `commands/` を作成し、`expand-answer` / `prp-plan` / `prp-implement` / `prp-prd` を試用導入。
+2026-04-17 | Codex | done | `docs/imp/task-a-session-handoff.md` を作成し、タスクAの再開手順を整理。
