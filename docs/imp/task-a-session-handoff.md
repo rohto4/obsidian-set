@@ -28,18 +28,161 @@
 5. `docs/imp/imp-plan.md`
 6. `docs/imp/imp-wait.md`
 7. `commands/prp-plan.md`
-8. 必要に応じて `commands/prp-implement.md`
+8. `docs/imp/task-a-vault-structure-plan.md`
+9. `G:\knowledge-vault\AGENTS.md`
+10. `G:\knowledge-vault\PROJECT.md`
+11. `G:\knowledge-vault\tasks\handoff\2026-04-18-vault-bootstrap-handoff.md`
+12. 必要に応じて `commands/prp-implement.md`
 
 ## 現在の前提
 
 - `obsidian-set` は本運用の vault 本体ではない。
 - `obsidian-set` は Obsidian 運用ルール、仕組み、AI 効率化の拠点として扱う。
 - 本運用の知識ベース vault は別ディレクトリに作る方針。
-- 候補名は未確定だが、例として `G:\devwork\knowledge-vault` のような別 repo / vault を想定する。
+- 2026-04-18 時点では、本運用 vault は `G:\knowledge-vault` に作成する方針。
+- 本運用 vault 自体は初期状態では GitHub repo 化しない。ローカル正本 + 別ドライブへの世代 snapshot backup を基本にする。
+- `G:\devwork` 配下の各開発PJは必要に応じて GitHub repo 化するが、横断ナレッジ vault とは分ける。
+- 本運用 vault には `knowledge/`, `memory/`, `tasks/`, `sources/`, `prompts/`, `inbox/` を分けて作る。
+- `memory/` は LLM 用の想起・圧縮レイヤーであり、詳細正本にはしない。
 - `docs/guide/` と `docs/spec/` は、仕組み化が進んだ結果の置き場。
 - `docs/condi-ref/` は採用未確定の調査、比較、候補。
 - `docs/imp/` は作業計画、進捗、判断待ち、作業ログ。
 - `docs/Z_trash/` は使わないと判断した候補の退避場所。vault の一般的なゴミ箱とは別。
+
+## 2026-04-18 作業中ステータス
+
+- ユーザ判断により、まず `G:\knowledge-vault` を実作成する。
+- P0 は旧案の `knowledge/index` 中心ではなく、`knowledge + memory + tasks + sources + prompts + inbox` の分離で進める。
+- `01 vault-operation` は「ローカル正本、GitHub repo 化しない、別ドライブ世代 snapshot backup」を含むメタルールとして作成する。
+- `06 source-backed note` は採用。
+- `04 query-protocol` は好みが出るため、初期は可変プロトコルとして扱う。
+- `17 knowledge index` は LLM 記憶階層の L1-L3 と接続して再設計する。
+- `20 GitHub / vault boundary` は、各開発PJ GitHub と横断 vault の分離、vault backup 方針を含めて扱う。
+- `G:\knowledge-vault` の初期ディレクトリと基本Markdownを作成済み。
+- 作成済み入口: `G:\knowledge-vault\AGENTS.md`, `G:\knowledge-vault\PROJECT.md`, `G:\knowledge-vault\README.md`
+- 作成済み引き継ぎ: `G:\knowledge-vault\tasks\handoff\2026-04-18-vault-bootstrap-handoff.md`
+- `docs/imp/task-a-vault-structure-plan.md` は新方針へ更新済み。
+- `.agents/skills/genshijin/` が追加された。ユーザが `genshijin`、`genshijin 極限` を指定し、以後の会話は短文圧縮モード前提。
+
+## タスクA 方針変更後の構成
+
+旧方針:
+
+```text
+knowledge/
+  index/
+  dev/
+  ai/
+  sources/
+  prompts/
+  decisions/
+  inbox/
+templates/
+attachments/
+```
+
+新方針:
+
+```text
+G:\knowledge-vault\
+  AGENTS.md
+  PROJECT.md
+  README.md
+  memory/
+    l1-triggers.md
+    l2-models/
+    l3-summaries/
+    l4-records/
+  knowledge/
+    dev/
+    ai/
+    decisions/
+  tasks/
+    active/
+    done/
+    handoff/
+  sources/
+  prompts/
+  inbox/
+  templates/
+  attachments/
+```
+
+役割:
+
+- `knowledge/`: 人間向け整理済みナレッジの正本。
+- `memory/`: LLM 用の想起・圧縮レイヤー。詳細正本ではない。
+- `tasks/`: タスク単位の作業記録、実施概要、引き継ぎ。
+- `sources/`: 根拠資料、source-backed note の正本。
+- `prompts/`: ユーザプロンプト全文と AI 回答要約。
+- `inbox/`: 未整理情報の一時置き場。
+
+記憶階層:
+
+- L1: 常時読む短いトリガーとリンク。
+- L2: 未確定の理解モデル、仮説、違和感。
+- L3: 実施したことの概略。
+- L4: 詳細記録、または詳細正本への入口。
+
+重複回避:
+
+- 同じ事実セットの正本は1つにする。
+- `memory/` に詳細本文を重複保存しない。
+- `memory/` は `knowledge/`, `tasks/`, `sources/`, `prompts/` への入口として使う。
+- `sources/` は根拠、`tasks/` は実施履歴、`knowledge/` は再利用知識。
+
+## タスクA P0/P1 再編成案
+
+P0:
+
+- `01 vault-operation`: 採用。ローカル正本、GitHub repo 化しない、別ドライブ世代 snapshot backup、各ディレクトリ役割のメタルール。
+- `05 note frontmatter`: 採用。全 note / template の検索・SQL化前提。
+- `06 source-backed note`: 採用。`sources/` の根拠保存ルール。
+- `18 inbox`: 採用。`inbox/` の未整理一時保存と昇格ルール。
+- `19 ai-session-summary`: 採用。`prompts/` と `tasks/` に接続。
+- `20 GitHub / vault boundary`: 採用。`G:\devwork` 配下の各開発PJ GitHub と `G:\knowledge-vault` を分離。
+- `17 knowledge index`: 再設計。旧 `knowledge/index` ではなく、`memory/l1-l3` として扱う。
+- `04 query-protocol`: 可変ルール。LLM回答フォーマットなので好みで変更余地あり。
+
+P1:
+
+- `02 dev-knowledge-taxonomy`: `knowledge/dev/` に反映。
+- `03 ai-knowledge-taxonomy`: `knowledge/ai/` に反映。
+- `10 sync-strategy`: GitHub repo 化ではなく、ローカル正本 + 別ドライブ snapshot backup 前提に更新。
+- `11 Web Clipper`: `sources/` 保存先で検討継続。
+
+後段:
+
+- `08 Foam`: VS Code を Obsidian 風に使う補助。P0後。
+- `09 markdownlint`: Markdown品質補助。P0後。
+- `12 Local REST API`: Obsidian外部読み書き入口。P0後、検証用vaultで試す。
+- `13 Obsidian MCP`: 12の上位層。AI agent tool化。12と一体構成で検討。
+- `21 実運用パターン`: 継続取り込み。
+- `22 SQL queryable vault`: frontmatter と正本配置が固まった後。
+
+## タスクA 現在状態
+
+- 方針変更後の構成整理: done
+- `G:\knowledge-vault` 初期作成: done
+- `docs/imp/task-a-vault-structure-plan.md` 新方針反映: done
+- `docs/guide/*` と `docs/condi-ref/github-vault-boundary.md` の新方針同期: done
+- Web Clipper 見送り: decided
+- backup root: `H:\bk\knowledge-vault-snapshots\`
+- P1 Dataview: installed
+- P1 SQLite: `G:\knowledge-vault\data\vault.sqlite` 生成済み
+- Obsidian registry に `G:\knowledge-vault` 登録済み
+- `G:\knowledge-vault\tech-stack.md` 作成済み。参照URL集約先。
+- Local REST API plugin 設置済み。API key確認と疎通確認はObsidian有効化後。
+- 次: Dataview dashboard 調整、backup script 試行、memory L2-L4 粒度調整、Local REST API疎通確認
+
+## GitHub / Backup 方針
+
+- `G:\devwork` 配下の各PJは、必要に応じて GitHub repo 化する。
+- `G:\knowledge-vault` 本体は初期 GitHub repo 化しない。
+- vault backup は、別ドライブへの日付付き snapshot を優先する。
+- 例: `G:\knowledge-vault` -> `H:\backup\knowledge-vault-snapshots\YYYY-MM-DD\`
+- GitHub Private repo で snapshot 運用する案は保留。
+- Google Drive 等クラウドへの圧縮断面アップロードも将来候補。
 
 ## 直近で導入したもの
 

@@ -1,7 +1,7 @@
 ﻿# Decision Wait List
 
 作成日: 2026-04-12
-更新日: 2026-04-14
+更新日: 2026-04-18
 
 ## メモ取り込み（2026-04-14）
 
@@ -72,8 +72,15 @@
 
 ## 新規判断待ち
 
+0. タスクA: 方針変更後の本運用 vault 構成を `task-a-vault-structure-plan.md` に反映するか。
+   - 参照: `docs/imp/task-a-vault-structure-plan.md`
+   - 現在地: `G:\knowledge-vault` は作成済み。
+   - 新構成: `knowledge + memory + tasks + sources + prompts + inbox`。
+   - 未完了: `task-a-vault-structure-plan.md` は旧 `knowledge/index` 中心案のまま。
+   - 判断点: 新構成をタスクA正式成果物として上書き更新するか。
+
 1. `docs/condi-ref/knowledge-category-options.md` の Option 1-5 のどれを採用するか。
-   - 初期おすすめ: Option 4 の縮小版。
+   - 現在の扱い: 旧案。新方針では `memory/`, `tasks/`, top-level `sources/`, `prompts/`, `inbox/` を追加した構成へ再設計済み。
 
 2. markdownlintをPJ設定として採用するか。
    - 先に `docs/condi-ref/markdownlint.md` でメリットと邪魔になる可能性を確認する。
@@ -81,7 +88,8 @@
 
 3. Obsidian Web Clipper を実際に使うか。
    - `docs/guide/web-clipper.md` へ昇格済み。
-   - 使う場合は保存先 directory とtemplateを決める。
+   - 回答: 見送り。
+   - 反映: P1では導入しない。将来使う場合の保存先は `G:\knowledge-vault\sources\`。
 
 4. Codex + Obsidian MCP の検証用 vault を作るか。
    - 初期おすすめ: 本番 `obsidian-set` ではなく検証用 vault で試す。
@@ -91,10 +99,15 @@
 
 6. `docs/guide/sql-queryable-vault.md` のどの方式を最初に試すか。
    - 候補: Dataview、Query All The Things、SQLite FTS5、DuckDB。
-   - 初期おすすめ: 外部SQLite/DuckDB index方式。ただし本文全文検索は日本語tokenize検証後。
+   - 回答: P1で Dataview と SQLite を入れる。
+   - 反映: Dataview dashboard と SQLite indexer を作成。
 
 7. `docs/guide/vault-operation.md` / `docs/guide/query-protocol.md` / `docs/guide/source-backed-notes.md` の役割重複を許容できるか。
-   - 現在の方針: `vault-operation` はメタルール、`query-protocol` はLLM問い合わせ手順、`source-backed-notes` は根拠資料note形式に限定する。
+   - 現在の方針: `vault-operation` はメタルール、`query-protocol` は可変回答フォーマット、`source-backed-notes` は `sources/` の根拠資料note形式。
+
+8. vault backup 先をどこにするか。
+   - 回答: `H:\bk\` 配下。
+   - 反映: `H:\bk\knowledge-vault-snapshots\` を初期 backup root にする。
 
 ## 判断不要で先に進めたこと
 
@@ -109,8 +122,9 @@
 
 ## 次に判断不要で進められること
 
+0. `docs/imp/task-a-vault-structure-plan.md` を新構成に更新する。
 1. `docs/condi-ref/markdownlint.md` をもとに `.markdownlint.json` の案を作る。
-2. `docs/condi-ref/knowledge-category-options.md` の初期おすすめ Option 4 縮小版に沿って、directory作成案だけを書く。
+2. `docs/condi-ref/knowledge-category-options.md` は旧候補として扱い、新構成の正式案は `task-a-vault-structure-plan.md` 側へ集約する。
 3. `docs/condi-ref/obsidian-local-rest-api.md` をもとに、検証用 vault の作成手順を書く。
 4. `docs/condi-ref/foam-evaluation.md` をもとに、導入待ちの判断材料を増やす。
 5. `docs/condi-ref/github-vault-boundary.md` をもとに、重複管理しそうなポイントを整理する。

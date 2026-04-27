@@ -89,3 +89,5 @@ G:\devwork\clone-dir\everything-claude-code
 最終フォルダ構造の検討＋実装候補の優先順位付けを1ファイルにまとめて出力して。
 さらにその情報に加えて、次の実装に向けてのimp-wait系の事が整理されて出力されていると助かる。
 ここまでを一息で実施しよう。
+
+初期化用のファイル（AGENTS.mdなど）とdocs/imp/task-a-session-handoff.md を読んで、タスクAを続行してください。

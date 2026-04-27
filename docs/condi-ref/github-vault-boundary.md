@@ -1,40 +1,33 @@
-# GitHub Vault Boundary Evaluation
+# GitHub Vault Boundary
 
 作成日: 2026-04-14
+更新日: 2026-04-19
 
 ## 目的
 
-GitHub Issue / PR、Obsidian vault、`docs/imp/` のどこに何を置くかを整理し、同じ情報の重複管理を避ける。
-現時点では要検討のため、guideへ昇格しない。
+`G:\devwork` 配下の各開発PJ GitHub と、`G:\knowledge-vault` の責務を分ける。
 
-## 重複しやすいポイント
+## 結論
 
-1. タスク状態
-2. 導入判断
-3. 調査根拠
-4. AI会話要約
-5. 設定値
-6. 外部URL
-7. 実装手順
+- 各開発PJ: GitHub repo 化してよい。
+- `G:\knowledge-vault`: 初期 GitHub repo 化しない。
+- vault backup: `H:\bk\knowledge-vault-snapshots\` へ日付付き snapshot。
 
-## 暫定の置き場
+## 正本
 
-| 情報 | 暫定正本 | 理由 |
-|---|---|---|
-| 実行中タスク | `docs/imp/` | このPJ内でAIがすぐ読める |
-| GitHubに紐づく実装状態 | GitHub Issue / PR | active execution truthとして扱いやすい |
-| 長期知識 | vault / `docs/guide/` | LLM問い合わせや再利用に向く |
-| 条件付き調査 | `docs/condi-ref/` | 採用前の比較・検証を置ける |
-| 確定仕様 | `docs/spec/` | 実装対象として扱う |
+| 情報 | 正本 |
+|---|---|
+| 実装状態、Issue、PR | 各開発PJ GitHub |
+| 横断ナレッジ | `G:\knowledge-vault\knowledge\` |
+| LLM記憶 | `G:\knowledge-vault\memory\` |
+| 作業記録、引き継ぎ | `G:\knowledge-vault\tasks\` |
+| 根拠資料 | `G:\knowledge-vault\sources\` |
+| AI会話要約 | `G:\knowledge-vault\prompts\` |
 
-## 運用想定
+## 重複回避
 
-- 同じ判断をGitHubとvaultの両方で本文管理しない。
-- GitHubに置く場合、vault側にはリンクと短い要約だけ置く。
-- vaultに置く場合、GitHub側には実行タスクとして必要な範囲だけ書く。
-- AI会話の全文は肥大化しやすいため、ユーザプロンプト全文とAI出力要約の保存ルールに従う。
+- GitHubとvaultに同じ本文を持たない。
+- GitHub側が正本なら、vaultにはリンクと短い要約だけ。
+- vault側が正本なら、GitHubには実行に必要な範囲だけ。
+- `memory/` はどちらの正本にもせず、想起入口にする。
 
-## 暫定判断
-
-必要。
-ただしvaultの特徴とGitHub運用の実態がまだ固まっていないため、先に重複ポイントを洗い出してからguideへ昇格する。

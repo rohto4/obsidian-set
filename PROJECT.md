@@ -41,6 +41,7 @@
 - `content-engine`: 複数媒体向けの文章展開。
 - `tdd-workflow`: 実装タスクをテスト先行で進める workflow。試用導入。
 - `verification-loop`: 実装後の検証ループ。試用導入。
+- `genshijin`: 短文圧縮回答モード。ユーザ指定時だけ使う。
 
 ## 試用導入した command
 
@@ -58,5 +59,9 @@
 - 実装対象として確定した仕様は `docs/spec/` に置く。
 - まだ採用未確定の調査、候補比較、実現可能性確認は `docs/condi-ref/` に置く。
 - 一時メモを恒久ルールに昇格する時は、`docs/memo.txt` から該当箇所を整理して移す。
+- `docs/` 配下の構成を変更した時は、`docs/README.md` を更新する。
+- `docs/condi-ref/` のファイルを追加・削除・大きく変更した時は、`docs/condi-ref/condi-ref-summary.md` を更新する。
+- `docs/guide/` のファイルを追加・削除・大きく変更した時は、`docs/guide/guide-summary.md` を更新する。
+- `docs/spec/` のファイルを追加・削除・大きく変更した時は、`docs/spec/spec-summary.md` を更新する。
 - ECC skill を追加する時は、必要な skill だけ `.agents/skills/` にコピーし、`docs/ecc-obsidian-setup.md` とこの `PROJECT.md` を更新する。
 - command を追加する時は、必要な command だけ `commands/` にコピーし、`docs/ecc-obsidian-setup.md` とこの `PROJECT.md` を更新する。

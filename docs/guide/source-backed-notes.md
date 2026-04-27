@@ -1,85 +1,44 @@
 # Source-Backed Notes Guide
 
 作成日: 2026-04-14
+更新日: 2026-04-19
 
 ## 目的
 
-AI / 開発 / Obsidian / MCP の知識を、根拠つきで蓄積する。
-LLMに問い合わせる時に、事実、推論、未確定を分けられる状態にする。
+根拠資料を `G:\knowledge-vault\sources\` に保存する。
+LLM回答時に、事実、解釈、未確定を分けられる状態にする。
 
-## 使う場面
+## 保存先
 
-- Web Clipperや手動メモで外部情報を保存する時。
-- 公式docs、GitHub repo、個人ブログ、AI出力を混ぜずに保存したい時。
-- `query-protocol` でLLMに読ませる根拠資料を作る時。
+```text
+G:\knowledge-vault\sources\
+```
 
-## カテゴリ追加の余地
-
-現時点のsource classは最小構成。
-必要になったら次を追加候補にする。
-
-- `official-docs`
-- `github-source`
-- `blog-practice`
-- `ai-output`
-- `user-note`
-- `experiment-result`
-
-## 重複管理を避ける方針
-
-このファイルは「根拠資料の保存形式」だけを扱う。
-検索や問い合わせ形式は `query-protocol`、全体運用は `vault-operation` に任せる。
+Web Clipper は現時点では見送り。
+手動保存または後段導入時も保存先は `sources/` に寄せる。
 
 ## Source Classes
 
-| Class | 例 | 扱い |
-|---|---|---|
-| official | 公式docs、仕様、reference | 最優先の根拠 |
-| primary | GitHub repo、release notes、issue、PR | 実装・運用の根拠 |
-| secondary | blog、解説記事、動画 | 参考。公式で裏取りする |
-| local | このPJのdocs、user prompt、decision | PJ内の現在地 |
-| inference | LLMや人間の推論 | 事実と分ける |
+- `official`: 公式docs、仕様、reference
+- `primary`: GitHub repo、release notes、issue、PR
+- `secondary`: blog、解説記事、動画
+- `local`: このPJやvault内docs
+- `experiment-result`: 実験結果
+- `inference`: LLMや人間の推論
 
-## Note Structure
+## ルール
 
-```markdown
----
-title: ""
-type: source
-status: draft
-topic: []
-source:
-  - ""
-created: 2026-04-14
-updated: 2026-04-14
-confidence: medium
-review_after:
-tags: []
----
+- source facts と local interpretation を分ける。
+- URL、取得日、review_after を残す。
+- 長文引用を避け、要約中心。
+- LLM推論を事実として扱わない。
+- Dataview / SQLite で拾えるよう frontmatter を維持する。
 
-# Title
+## Template
 
-## Source Facts
+正本:
 
-- 
-
-## Local Interpretation
-
-- 
-
-## Open Questions
-
-- 
-
-## Next Actions
-
-- 
+```text
+G:\knowledge-vault\templates\source-note.md
 ```
 
-## Rules
-
-1. 公式情報と推論を同じ箇条書きに混ぜない。
-2. source URL を残す。
-3. 日付に依存する情報は `review_after` を入れる。
-4. 長文引用を避け、要約中心にする。
-5. LLMが生成した要約は `Local Interpretation` へ置く。

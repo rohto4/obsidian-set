@@ -41,3 +41,9 @@
 2026-04-17 | Codex | done | ECC から `tdd-workflow` / `verification-loop` skill を `.agents/skills/` に追加。
 2026-04-17 | Codex | done | `commands/` を作成し、`expand-answer` / `prp-plan` / `prp-implement` / `prp-prd` を試用導入。
 2026-04-17 | Codex | done | `docs/imp/task-a-session-handoff.md` を作成し、タスクAの再開手順を整理。
+2026-04-17 | Codex | done | `docs/imp/task-a-vault-structure-plan.md` を作成し、本運用vaultの最大構成、初期構成、優先順位を整理。
+2026-04-18 | Codex | done | `G:\knowledge-vault` を作成し、`knowledge/memory/tasks/sources/prompts/inbox` 分離の初期ファイルとテンプレートを生成。
+2026-04-18 | Codex | done | タスクA実施前資料として `PROJECT.md`, `ecc-obsidian-setup.md`, `imp-wait.md`, `imp-plan.md`, `task-a-session-handoff.md` を新方針へ同期。
+2026-04-18 | Codex | done | `docs/imp/task-a-vault-structure-plan.md` を旧 `knowledge/index` 中心案から新 `memory/tasks/sources` 分離案へ全面更新。
+2026-04-19 | Codex | done | Web Clipper見送り、backup root `H:\bk\`、P1 Dataview/SQLite採用を反映し、Dataview設置とSQLite index生成を実施。
+2026-04-19 | Codex | done | `G:\knowledge-vault` をObsidian registry登録し、Local REST API pluginとroot `tech-stack.md` を追加。

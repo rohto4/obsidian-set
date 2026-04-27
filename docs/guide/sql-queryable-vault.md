@@ -123,6 +123,18 @@ DuckDBにはfull-text search extensionもある。
 
 - noteだけでなく、ログ、CSV、export、metadataをまとめて分析する場合。
 
+## 2026-04-19 更新
+
+P1では Dataview と SQLite を両方入れる。
+
+- Dataview: Obsidian内 dashboard 用。
+- SQLite: CLI / SQL検索用。
+- Markdown note が正本。Dataview結果と SQLite DB は派生物。
+- DB出力先: `G:\knowledge-vault\data\vault.sqlite`
+- indexer: `G:\knowledge-vault\scripts\index-vault\index_vault.py`
+
+Web Clipper は見送り。
+
 ## 初期推奨
 
 このPJでは次の順で検証する。
