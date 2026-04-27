@@ -173,7 +173,9 @@ P1:
 - Obsidian registry に `G:\knowledge-vault` 登録済み
 - `G:\knowledge-vault\tech-stack.md` 作成済み。参照URL集約先。
 - Local REST API plugin 設置済み。API key確認と疎通確認はObsidian有効化後。
-- 次: Dataview dashboard 調整、backup script 試行、memory L2-L4 粒度調整、Local REST API疎通確認
+- 2026-04-27: Dataview dashboard 調整、backup script 試行、memory L2-L4 README作成、SQLite再indexを実施。
+- 2026-04-27: 他PJ向け `G:\knowledge-vault` 参照テンプレートを作成。
+- 次: Local REST API疎通確認、backup世代数の決定
 
 ## GitHub / Backup 方針
 

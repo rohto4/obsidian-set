@@ -2,8 +2,6 @@
 
 最大50行。古い行から削除する。
 
-2026-04-12 | Codex | done | AGENTS / PROJECT / ECC local skills の既存構成を確認。
-2026-04-12 | Codex | done | knowledge-ops / research-ops skill を参照し、知識運用と調査境界を確認。
 2026-04-12 | Codex | done | Obsidian Sync、Web Clipper、Git、MCP、VS Code MCP、Claude MCP、Gemini MCP、Local REST API、VS Code Markdown extensions を調査。
 2026-04-12 | Codex | done | `docs/imp/imp-plan.md` に20件の実行候補を整理。
 2026-04-12 | Codex | done | `docs/imp/imp-wait.md` に判断待ち事項を整理。
@@ -47,3 +45,6 @@
 2026-04-18 | Codex | done | `docs/imp/task-a-vault-structure-plan.md` を旧 `knowledge/index` 中心案から新 `memory/tasks/sources` 分離案へ全面更新。
 2026-04-19 | Codex | done | Web Clipper見送り、backup root `H:\bk\`、P1 Dataview/SQLite採用を反映し、Dataview設置とSQLite index生成を実施。
 2026-04-19 | Codex | done | `G:\knowledge-vault` をObsidian registry登録し、Local REST API pluginとroot `tech-stack.md` を追加。
+2026-04-27 | Codex | done | `G:\knowledge-vault` のmemory L2-L4 README、Dataview dashboard追加ビュー、backup READMEを作成。
+2026-04-27 | Codex | done | SQLite indexerを再実行し、backup scriptで `H:\bk\knowledge-vault-snapshots\2026-04-27_172129` を作成。
+2026-04-27 | Codex | done | 他PJの `AGENTS.md` 向けに `G:\knowledge-vault` 参照テンプレートを作成。
